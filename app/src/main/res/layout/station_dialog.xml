@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nv"
+        android:layout_width="256dp"
+        android:layout_height="232dp">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/water_dialog_cl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="入库："
+                android:textColor="@color/color_104"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="入库"
+                android:textColor="@color/color_104"
+                app:layout_constraintStart_toEndOf="@id/textView1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/t2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="库存："
+                android:textColor="@color/color_104"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView1" />
+
+            <TextView
+                android:id="@+id/channel_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="库存"
+                android:textColor="@color/color_104"
+                app:layout_constraintStart_toEndOf="@id/t2"
+                app:layout_constraintTop_toBottomOf="@id/textView1" />
+
+            <TextView
+                android:id="@+id/t"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="出库-报废："
+                android:textColor="@color/color_104"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/t2" />
+
+            <TextView
+                android:id="@+id/ss_water_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="出库-报废"
+                android:textColor="@color/color_104"
+                app:layout_constraintStart_toEndOf="@id/textView5"
+                app:layout_constraintTop_toBottomOf="@+id/channel_name" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="出库-调配："
+                android:textColor="@color/color_104"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/t" />
+
+            <TextView
+                android:id="@+id/avg_water_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="出库-调配"
+                android:textColor="@color/color_104"
+                app:layout_constraintStart_toEndOf="@id/textView5"
+                app:layout_constraintTop_toBottomOf="@+id/t" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="出库-返厂："
+                android:textColor="@color/color_104"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView5" />
+
+            <TextView
+                android:id="@+id/max_water_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="出库-返厂"
+                android:textColor="@color/color_104"
+                app:layout_constraintStart_toEndOf="@+id/textView6"
+                app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="日期："
+                android:textColor="@color/color_104"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/max_water_tv" />
+
+            <TextView
+                android:id="@+id/time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="日期"
+                android:textColor="@color/color_104"
+                app:layout_constraintStart_toEndOf="@+id/textView7"
+                app:layout_constraintTop_toBottomOf="@+id/max_water_tv" />
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nv2"
+        android:layout_width="256dp"
+        android:layout_height="256dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/weather_dialog_ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nv5"
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/c1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="配水指令："
+                android:textColor="@color/color_104"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/command"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@drawable/shape_gray_round_cornor"
+                android:minLines="3"
+                android:padding="8dp"
+                android:singleLine="false"
+                android:text="配水指令"
+                android:textColor="@color/color_104"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/c1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/c2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="创建时间："
+                android:textColor="@color/color_104"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/command" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="创建时间"
+                android:textColor="@color/color_104"
+                app:layout_constraintStart_toEndOf="@id/c2"
+                app:layout_constraintTop_toBottomOf="@id/command" />
+
+            <TextView
+                android:id="@+id/c5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="渠道名称："
+                android:textColor="@color/color_104"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/c2" />
+
+            <TextView
+                android:id="@+id/qu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="渠道名称"
+                android:textColor="@color/color_104"
+                app:layout_constraintStart_toEndOf="@id/c3"
+                app:layout_constraintTop_toBottomOf="@id/c2" />
+
+            <TextView
+                android:id="@+id/c3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="创  建  人："
+                android:textColor="@color/color_104"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/c5" />
+
+            <TextView
+                android:id="@+id/per"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="创  建  人"
+                android:textColor="@color/color_104"
+                app:layout_constraintStart_toEndOf="@id/c3"
+                app:layout_constraintTop_toBottomOf="@id/c5" />
+
+            <TextView
+                android:id="@+id/c4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="测  站  组："
+                android:textColor="@color/color_104"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/c3" />
+
+            <TextView
+                android:id="@+id/station"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="测  站  组"
+                android:textColor="@color/color_104"
+                app:layout_constraintStart_toEndOf="@id/c4"
+                app:layout_constraintTop_toBottomOf="@id/c3" />
+
+            <TextView
+                android:id="@+id/c6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="状        态："
+                android:textColor="@color/color_104"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/c4" />
+
+            <TextView
+                android:id="@+id/state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="状        态"
+                android:textColor="@color/color_104"
+                app:layout_constraintStart_toEndOf="@id/c6"
+                app:layout_constraintTop_toBottomOf="@id/c4" />
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nv3"
+        android:layout_width="256dp"
+        android:layout_height="200dp"
+        android:visibility="gone">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/gprs_dialog_cl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="站点名称："
+                android:textColor="@color/color_104"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tt_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="渠道名称："
+                android:textColor="@color/color_104"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView11" />
+
+            <TextView
+                android:id="@+id/channel_name1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="渠道名称"
+                android:textColor="@color/color_104"
+                app:layout_constraintStart_toEndOf="@id/tt_2"
+                app:layout_constraintTop_toBottomOf="@id/textView11" />
+
+            <TextView
+                android:id="@+id/gprs_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="站点名称"
+                android:textColor="@color/color_104"
+                app:layout_constraintStart_toEndOf="@id/textView11"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/textView51"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="累计流量："
+                android:textColor="@color/color_104"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tt_2" />
+
+            <TextView
+                android:id="@+id/grps_water_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="累计流量"
+                android:textColor="@color/color_104"
+                app:layout_constraintStart_toEndOf="@id/textView51"
+                app:layout_constraintTop_toBottomOf="@+id/channel_name1" />
+
+
+            <TextView
+                android:id="@+id/textView61"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="瞬时流量："
+                android:textColor="@color/color_104"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView51" />
+
+            <TextView
+                android:id="@+id/gpr_water_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="瞬时流量"
+                android:textColor="@color/color_104"
+                app:layout_constraintStart_toEndOf="@+id/textView61"
+                app:layout_constraintTop_toBottomOf="@+id/textView51" />
+
+
+            <TextView
+                android:id="@+id/textView71"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="监测时间："
+                android:textColor="@color/color_104"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gpr_water_tv" />
+
+            <TextView
+                android:id="@+id/t_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="监测时间"
+                android:textColor="@color/color_104"
+                app:layout_constraintStart_toEndOf="@+id/textView71"
+                app:layout_constraintTop_toBottomOf="@+id/gpr_water_tv" />
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+</RelativeLayout>
